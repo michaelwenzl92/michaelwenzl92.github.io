@@ -3,22 +3,21 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-email: you@example.com
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+first_name: Michael
+middle_name:
+last_name: Wenzl
+email: michael.wenzl92@outlook.com
+description: >
+  a blog on software development and music
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
+keywords: software-development, software-architecture, music, composition
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🔥 # the emoji used as the favicon
-url: https://alshedivat.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/
+url: https://michaelwenzl92.github.io # the base hostname & protocol for your site
+baseurl: # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
@@ -40,8 +39,6 @@ footer_fixed: true
 # Dimensions
 max_width: 800px
 
-# TODO: add layout settings (single page vs. multi-page)
-
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
@@ -54,10 +51,10 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # your GitHub user name
+github_username: michaelwenzl92
 gitlab_username: # your GitLab user name
-twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
+twitter_username: michaelwenzl92
+linkedin_username: michael-wenzl-b920001a5
 scholar_userid: # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
@@ -71,9 +68,6 @@ wikidata_id: # your wikidata id
 dblp_url: # your DBLP profile url
 stackoverflow_id: #your stackoverflow id
 
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
-
 google_analytics:  # your google-analytics ID (format: UA-XXXXXXXXX)
 google_site_verification:  # your google-site-verification ID (Google Search Console)
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
@@ -83,16 +77,28 @@ panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio  # your blog must have a name for it to show up in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_name: Software Engineering
+blog_description: Software Development and Architecture
 permalink: /blog/:year/:title/
+
+music_blog_name: Music
+music_blog_description: Some good old music
+music_permalink: /music/:year/:title/
 
 # Pagination
 pagination:
   enabled: true
 
+paginate_multiple:
+  - paginate: 5
+    paginate_path: '/software_blog/page:num/'
+    sub_dir: '/software_blog'
+  - paginate: 5
+    paginate_path: '/music_blog/page:num/'
+    sub_dir: '/music_blog'
+
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: michaelwenzl.com # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # -----------------------------------------------------------------------------
@@ -105,9 +111,6 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
-  projects:
-    output: true
-    permalink: /projects/:path/
 
 news_limit: 5
 
@@ -149,7 +152,8 @@ plugins:
   - jekyll-feed
   - jekyll-github-metadata
   - jekyll-imagemagick
-  - jekyll-paginate-v2
+  - jekyll-paginate
+  - jekyll-paginate-multiple
   - jekyll/scholar
   - jekyll-sitemap
   - jekyll-target-blank
@@ -196,36 +200,6 @@ jekyll-archives:
     year: '/blog/:year/'
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
-
-# -----------------------------------------------------------------------------
-# Jekyll Scholar
-# -----------------------------------------------------------------------------
-
-scholar:
-
-  last_name: Einstein
-  first_name: [Albert, A.]
-
-  style: apa
-  locale: en
-
-  source: /_bibliography/
-  bibliography: papers.bib
-  bibliography_template: bib
-  # Note: if you have latex math in your bibtex, the latex filter
-  # preprocessing may conflict with MathJAX if the latter is enabled.
-  # See https://github.com/alshedivat/al-folio/issues/357.
-  bibtex_filters: [latex, smallcaps, superscript]
-
-  replace_strings: true
-  join_strings: true
-
-  details_dir: bibliography
-  details_layout: bibtex.html
-  details_link: Details
-
-  query: "@*"
-
 
 # -----------------------------------------------------------------------------
 # Responsive WebP Images

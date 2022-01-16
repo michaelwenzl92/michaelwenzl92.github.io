@@ -6,7 +6,7 @@
         <div class="container">
           {% if page.title != "about" -%}
           <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl | prepend: site.url }}/">
-              {%- if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}  {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif -%}
+            {%- if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}  {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif -%}
           </a>
           {%- elsif site.enable_navbar_social -%}
           <!-- Social Icons -->
@@ -33,11 +33,23 @@
                   {%- endif -%}
                 </a>
               </li>
+
               {% if site.blog_name %}
               <!-- Blog -->
-              <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/blog/' | relative_url }}">blog
+              <li class="nav-item {% if page.url contains 'software' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/software_blog/' | relative_url }}">software
                   {%- if page.title == "blog" -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+              </li>
+              {%- endif %}
+
+              {% if site.music_blog_name %}
+              <!-- Music Blog -->
+              <li class="nav-item {% if page.url contains 'music' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/music_blog/' | relative_url }}">music
+                  {%- if page.title == "music" -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
                 </a>

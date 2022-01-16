@@ -8,6 +8,14 @@ p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+}
+
+.post-title {
+  margin-bottom: 0px;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -216,7 +224,7 @@ blockquote {
 .social {
   text-align: center;
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2rem;
     a {
       i::before {
         color: var(--global-text-color);
@@ -321,6 +329,17 @@ footer.sticky-bottom {
   }
 }
 
+.post-img {
+  text-align: center;
+}
+
+.post-img img {
+  max-width: 80%;
+}
+
+.post-img figure {
+  margin: 0px;
+}
 
 // Distill
 
@@ -566,4 +585,16 @@ html.transition *:after {
   color: var(--global-text-color-light);
   font-size: 0.875rem;
   padding-top: 0.25rem;
+}
+
+// tables
+
+table {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+table td {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
