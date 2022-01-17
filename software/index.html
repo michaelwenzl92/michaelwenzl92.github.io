@@ -1,10 +1,10 @@
 ---
 layout: default
-title: music_blog
+title: software
 pagination:
   enabled: true
-  collection: music_posts
-  permalink: /music_blog/page/:num/
+  collection: posts
+  permalink: /software/page/:num/
   per_page: 3
   sort_field: date
   sort_reverse: true
@@ -16,14 +16,13 @@ pagination:
 <div class="post">
 
   <div class="header-bar">
-    <h1>{{ site.music_blog_name }}</h1>
-    <h2>{{ site.music_blog_description }}</h2>
+    <h1>{{ site.software_blog_name }}</h1>
+    <h2>{{ site.software_blog_description }}</h2>
   </div>
 
 
   <ul class="post-list">
-    {% for post in paginator.posts %}
-    {% if post.categories contains 'music' %}
+    {% for post in site.categories.software %}
 
     {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
     {% assign year = post.date | date: "%Y" %}
@@ -59,7 +58,6 @@ pagination:
     </p>
     </li>
 
-    {% endif %}
     {% endfor %}
   </ul>
 

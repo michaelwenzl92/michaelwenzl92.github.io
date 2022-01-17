@@ -77,25 +77,15 @@ panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Software Engineering
-blog_description: Software Development and Architecture
-permalink: /blog/:year/:title/
+software_blog_name: Software Engineering
+software_blog_description: Software Development and Architecture
 
 music_blog_name: Music
 music_blog_description: Some good old music
-music_permalink: /music/:year/:title/
 
 # Pagination
 pagination:
   enabled: true
-
-paginate_multiple:
-  - paginate: 5
-    paginate_path: '/software_blog/page:num/'
-    sub_dir: '/software_blog'
-  - paginate: 5
-    paginate_path: '/music_blog/page:num/'
-    sub_dir: '/music_blog'
 
 # Comments
 disqus_shortname: michaelwenzl.com # put your disqus shortname
@@ -153,7 +143,6 @@ plugins:
   - jekyll-github-metadata
   - jekyll-imagemagick
   - jekyll-paginate
-  - jekyll-paginate-multiple
   - jekyll/scholar
   - jekyll-sitemap
   - jekyll-target-blank

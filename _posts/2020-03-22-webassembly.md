@@ -3,7 +3,8 @@ layout: post
 title: WebAssembly - The new era of web development
 date: 2020-03-22 05:54:00
 description: WebAssembly - The new era of web development
-categories: software web
+tags: web
+categories: software
 ---
 
 On 5 December 2019 the World Wide Web Consortium made with this [article](https://www.w3.org/2019/12/pressrelease-wasm-rec.html.en) a major step towards a faster and more flexible web. They added a fourth language for client-side web development to the existing languages HTML, CSS, and Javascript. All major browsers already supported it since 2017. This language will not only enhance the performance and improves the available application areas, but it will also make the web more agnostic on which programming language you or your development team want to develop. This is the possibility to enter a completely new era of web development and this language is called **WebAssembly**.
