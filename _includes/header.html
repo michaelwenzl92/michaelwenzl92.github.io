@@ -34,6 +34,15 @@
                 </a>
               </li>
 
+              <!-- Now -->
+              <li class="nav-item {% if page.url contains 'now' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/now/' | relative_url }}">now
+                  {%- if page.title == "now" -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+              </li>
+
               {% if site.software_blog_name %}
               <!-- Blog -->
               <li class="nav-item {% if page.url contains 'software' %}active{% endif %}">

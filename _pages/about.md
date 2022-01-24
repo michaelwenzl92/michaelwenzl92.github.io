@@ -13,21 +13,18 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi I'm Michael Wenzl. Software developer, musician, and cook. 
+Hi I'm Michael Wenzl. Software developer and hobby composer / musician.
 
-[comment]: # Who am I.
-
-[comment]: # What I am doing.
-
-[comment]: # What I like.
+This is just a blog about things I learn and think about software engineering and music.
 
 If you have questions or want to give me suggestions for future blog posts feel free to contact me: <a href="mailto:michael.wenzl92@outlook.com">michael.wenzl92@outlook.com</a>
 
 ##### skills
 
+* Knowledge and experience with distributed systems
+* Scrum & Extreme programming
 * Software Architecture
 * Good Communicator and Presenter
-* Good Analyzing Skills
 
 ##### professional experience
 

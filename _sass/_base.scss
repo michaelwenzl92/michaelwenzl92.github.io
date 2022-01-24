@@ -88,6 +88,10 @@ blockquote {
       p { display: block; }
     }
   }
+
+  .now-img {
+    width: 40%;
+  }
 }
 
 .post-description {
@@ -590,6 +594,7 @@ html.transition *:after {
 // tables
 
 table {
+  width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
