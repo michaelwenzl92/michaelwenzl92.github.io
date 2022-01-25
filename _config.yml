@@ -77,7 +77,7 @@ panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 # Blog
 # -----------------------------------------------------------------------------
 
-software_blog_name: Software Engineering
+software_blog_name: Software
 software_blog_description: Software Development and Architecture
 
 music_blog_name: Music

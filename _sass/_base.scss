@@ -106,6 +106,42 @@ blockquote {
   }
 }
 
+.youtube {
+  width: 100%;
+  max-width: 780px;
+  aspect-ratio: 16/10;
+}
+
+// tables
+
+.post-content p {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.post-content .time-table tr td:first-child {
+  width: 110px;
+}
+
+.time-table {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.time-table td, .news td, .news th {
+  padding-left: 1rem;
+  padding-right: 0;
+}
+
+.news tr th:first-child {
+  width: 110px;
+}
+
+.post-list .post-tags {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
 
 // Navbar customization
 
@@ -555,7 +591,7 @@ html.transition *,
 html.transition *:before,
 html.transition *:after {
   transition: all 750ms !important;
-  transition-delay: 0 !important;
+  transition-delay: 0s !important;
 }
 
 // Extra Markdown style (post Customization)
@@ -589,17 +625,4 @@ html.transition *:after {
   color: var(--global-text-color-light);
   font-size: 0.875rem;
   padding-top: 0.25rem;
-}
-
-// tables
-
-table {
-  width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-table td {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }

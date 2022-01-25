@@ -23,7 +23,7 @@ Programming that way may sound a bit laborious and more complex. It is basically
 
 With optimized code the browser is now able to compute complex and high-performance tasks. This elevates browser gaming to a new sphere and also enables porting big software suites to the web. A very good example is the added WebAssembly-support for the UnrealEngine. In the following video you can see a presentation of the Unreal Engine 4 executed inside the browser. Basically a top-notch gaming engine executed without any installation. On top of that it is executed in a piece of software that is more or less installed on every computer and smartphone on our planet.
 
-{% include youtubePlayer.html id="eh-yy7f1bvQ" title="Unreal Engine 4 Web Asm Demo. implyingprogramming.com" %}
+{% include youtube.html id="eh-yy7f1bvQ" title="Unreal Engine 4 Web Asm Demo. implyingprogramming.com" %}
 
 Another example would be the porting of the 30-year old AutoCAD code base to the web. It is possible to port an old C++ code base to the web. Because of that it is possible to benefit from the web's advantages like better a completely new customer target market or better CI/CD. (continuous integration / continuous delivery) If you want to hear more about this porting project you can watch the [talk](https://www.infoq.com/presentations/autocad-webassembly/?utm_source=presentations&utm_medium=ny&utm_campaign=qcon) from one of the developers.
 
