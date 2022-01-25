@@ -44,7 +44,12 @@ blockquote {
   font-size: 1.2rem;
 }
 
-.navbar-brand, .navbar-nav a, .post-header p {
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.post-meta, .post-tags {
   font-weight: normal;
 }
 
