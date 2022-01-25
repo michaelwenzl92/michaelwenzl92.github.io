@@ -5,6 +5,7 @@
 // Typography
 
 p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
+  font-family: "Open Sans" !important;
   color: var(--global-text-color);
 }
 
@@ -41,6 +42,10 @@ blockquote {
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   font-size: 1.2rem;
+}
+
+.navbar-brand, .navbar-nav a, .post-header p {
+  font-weight: normal;
 }
 
 // Math
