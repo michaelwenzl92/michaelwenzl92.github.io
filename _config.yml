@@ -16,7 +16,7 @@ keywords: software-development, software-architecture, music, composition
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🔥 # the emoji used as the favicon
-url: https://michaelwenzl92.github.io # the base hostname & protocol for your site
+url: https://michaelwenzl.com # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -54,7 +54,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: michaelwenzl92
 gitlab_username: # your GitLab user name
 twitter_username: michaelwenzl92
-linkedin_username: michael-wenzl-b920001a5
+linkedin_username: michaelwenzl92
 scholar_userid: # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
@@ -148,6 +148,7 @@ plugins:
   - jekyll-target-blank
   - jekyll-twitter-plugin
   - jemoji
+  - jekyll-redirect-from
 
 # Sitemap settings
 defaults:

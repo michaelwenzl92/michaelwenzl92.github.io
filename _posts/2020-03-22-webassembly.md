@@ -1,6 +1,8 @@
 ---
 layout: post
 title: WebAssembly - The new era of web development
+redirect_from:
+- /webassembly-the-new-era-of-web-development/
 date: 2020-03-22 05:54:00
 description: WebAssembly - The new era of web development
 tags: web
