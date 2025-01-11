@@ -1,0 +1,105 @@
+$backgroundColor: #ffffff;
+$bodyColor: #504A45;
+$secondaryColor: #CF8F5B;
+$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+
+@font-face {
+  font-family: "Linux Libertine";
+  src: url("/assets/LinLibertine_DR.ttf");
+}
+
+@font-face {
+  font-family: "Linux Biolinum";
+  src: url("/assets/LinBiolinum_R.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans Light";
+  src: url("/assets/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/assets/CormorantGaramond-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond Semibold";
+  src: url("/assets/CormorantGaramond-SemiBold.ttf");
+}
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font: normal normal normal 21px/150% "Cormorant Garamond Semibold", Serif, sans-serif;
+}
+
+main {
+  width: 90%; /* Default to 90% of the screen width */
+  max-width: 1127px; /* Limit the maximum width for larger screens */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+  line-height: 0.8em;
+}
+
+.sub-header {
+  color: $secondaryColor;
+  font-size: 0.8em;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+a {
+  color: $secondaryColor;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  text-align: justify;
+}
+
+header {
+  height: 50px;
+}
+
+header ul {
+  text-align: right;
+}
+
+header li {
+  margin-right: 50px;
+  display: inline;
+}
+
+main ul li * {
+  display: block;
+  float: left;
+}
+
+ul span {
+  width: 150px;
+  font-weight: bold;
+}
+
+ul span, th {
+  width: 150px;
+  font-weight: bold;
+}
