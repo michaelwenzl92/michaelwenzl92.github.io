@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h1 class="log">Posts</h1>
+<p class="sub-header">List of posts</p>
+
+<article>
+    <table>
+        {% for post in site.posts %}
+        <tr>
+            <th scope="row">{{ post.date | date: "%b %-d, %Y" }}</th>
+            <td>
+                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</article>
