@@ -11,4 +11,6 @@ My band <a href="https://www.facebook.com/StreamofVoid">Stream of Void</a> has r
 
 We are very proud of this first steps into the music scene and already work on our next release.
 
-<iframe src="https://open.spotify.com/embed/album/3992neQE1QqkouJSWz9zYb" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<div class="embed-container">
+  <iframe src="https://open.spotify.com/embed/album/3992neQE1QqkouJSWz9zYb" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</div>

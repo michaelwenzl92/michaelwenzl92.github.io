@@ -2,8 +2,7 @@
 layout: default
 title: "Michael Wenzl"
 ---
-
-<h1>Michael Wenzl</h1>
+<h1 class="cv">Michael Wenzl</h1>
 <p class="sub-header">On a mission to tame complexity</p>
 <p>Contact: <a href="mailto:michael.wenzl92@outlook.com">michael.wenzl92@outlook.com</a></p>
 

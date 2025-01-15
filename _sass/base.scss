@@ -77,11 +77,28 @@ p {
 }
 
 header {
-  height: 50px;
+  height: 70px;
+}
+
+body:has(h1.cv) header h2 {
+  display: none;
+}
+
+header h2 {
+  float: left;
+  margin: 0 0 0 20px;
+  line-height: 70px;
+  vertical-align: middle;
 }
 
 header ul {
-  text-align: right;
+  float: right;
+  margin: 0;
+  line-height: 70px;
+}
+
+body:has(h1.cv) #cv-link, body:has(h1.log) #log-link, body:has(h1.now) #now-link {
+  font-weight: bolder;
 }
 
 header li {
@@ -102,4 +119,25 @@ ul span {
 ul span, th {
   width: 150px;
   font-weight: bold;
+}
+
+.books li {
+  font-weight: bolder;
+}
+
+.books p {
+  margin-top: 0;
+}
+
+.embed-container {
+  padding: 0 40px 0 40px;
+}
+
+.embed-container iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+div.row {
+  text-align: center;
 }
